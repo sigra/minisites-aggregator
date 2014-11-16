@@ -33,5 +33,5 @@ group :development do
 end
 
 ### Sites
-gem 'minisites-fabrika_prazdnikof', github: '', require: 'fabrika_prazdnikof'
+gem 'minisites-fabrika_prazdnikof', github: 'sigra/minisites-fabrika_prazdnikof', require: 'fabrika_prazdnikof'
 ###
