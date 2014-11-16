@@ -1,5 +1,6 @@
-PATH
-  remote: fabrika_prazdnikof
+GIT
+  remote: git://github.com/sigra/minisites-fabrika_prazdnikof.git
+  revision: c10ae926f609dcfecbc7a5a0eb1d7b6a59f71991
   specs:
     minisites-fabrika_prazdnikof (0.0.2)
       dragonfly
@@ -69,6 +70,9 @@ GEM
     colorize (0.7.3)
     daemons (1.1.9)
     debug_inspector (0.0.2)
+    dotenv (0.11.1)
+      dotenv-deployment (~> 0.0.2)
+    dotenv-deployment (0.0.2)
     dragonfly (1.0.7)
       addressable (~> 2.3)
       multi_json (~> 1.0)
@@ -76,6 +80,9 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.2.2)
+    foreman (0.75.0)
+      dotenv (~> 0.11.1)
+      thor (~> 0.19.1)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -87,6 +94,7 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    kgio (2.9.2)
     launchy (2.4.3)
       addressable (~> 2.3)
     letter_opener (1.2.0)
@@ -127,6 +135,7 @@ GEM
       activesupport (= 4.1.7)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+    raindrops (0.13.0)
     rake (10.3.2)
     sass (3.2.19)
     sass-rails (4.0.4)
@@ -161,6 +170,10 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unicorn (4.8.3)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
@@ -173,6 +186,7 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   coffee-rails
+  foreman
   haml
   jbuilder
   jquery-rails
@@ -187,3 +201,4 @@ DEPENDENCIES
   sqlite3
   thin
   uglifier
+  unicorn

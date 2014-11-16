@@ -5,6 +5,8 @@ gem 'rails_config'
 
 gem 'coffee-rails'
 
+gem 'foreman'
+
 gem 'haml'
 
 gem 'jbuilder'
@@ -12,8 +14,6 @@ gem 'jquery-rails'
 
 gem 'sass-rails'
 gem 'sqlite3'
-
-gem 'thin'
 
 gem 'uglifier'
 
@@ -30,6 +30,12 @@ group :development do
   gem 'meta_request'
   gem 'quiet_assets'
   gem 'spring'
+
+  gem 'thin'
+end
+
+group :production do
+  gem 'unicorn'
 end
 
 ### Sites
