@@ -1,0 +1,2 @@
+secrets:
+  production: some_secret_salt_for_production
